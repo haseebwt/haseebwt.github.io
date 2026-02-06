@@ -1,0 +1,108 @@
+html,
+body {
+  background-color: #0a072d;
+  margin: 0;
+  padding: 0;
+
+}
+
+canvas {
+  display: block;
+}
+
+@font-face {
+  font-family: mononoki;
+  /* set name */
+  src: url(./mononoki/mononoki-Regular.ttf);
+  /* url of the font */
+}
+
+@font-face {
+  font-family: mononoki;
+  /* set name */
+  src: url(./mononoki/mononoki-Bold.ttf);
+  /* url of the font */
+  font-weight: bold;
+}
+
+/* inspired form gumroad website */
+.yesButton {
+  --bg: #e6b98e;
+  --hover-bg: #f5dfcb;
+  --hover-text: #7b451b;
+  color: #7b451b;
+  cursor: pointer;
+  font-family: mononoki;
+  font-weight: bold;
+  font-size: 22px;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.yesButton:hover {
+  color: var(--hover-text);
+  transform: translate(0, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.yesButton:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+
+.noButton {
+  --bg: #e6b98e;
+  --hover-bg: rgb(245, 223, 203);
+  --hover-text: #7b451b;
+  background: var(--bg);
+  border-radius: 0.5em;
+  border: solid 2px #030f14;
+  cursor: pointer;
+  color: var(--hover-text);
+  font-size: 22px;
+  font-family: mononoki;
+  font-weight: bold;
+  padding: 0.7em 1.7em;
+  outline: none;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.noButton:hover {
+  box-shadow:
+    inset 0px -6px 18px -6px var(--hover-text),
+    inset 0px 6px 18px -6px var(--hover-text),
+    inset 12px 0px 12px -6px var(--hover-text),
+    inset -12px 0px 12px -6px var(--hover-text),
+    -1px -1px 6px 0px var(--hover-text);
+}
+
+.noButton:active {
+  box-shadow:
+    inset 0px -12px 12px -6px rgba(3, 15, 20, 1),
+    inset 0px 12px 12px -6px rgba(3, 15, 20, 1),
+    inset 12px 0px 12px -6px rgba(3, 15, 20, 1),
+    inset -12px 0px 12px -6px rgba(3, 15, 20, 1),
+    -1px -1px 6px 0px rgba(54, 69, 75, 1);
+}
+
+.text {
+  color: #d0a756;
+  font-weight: 700;
+  margin: auto;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.noButton:hover .text {
+  transform: scale(0.9);
+}
+
+.noButton:active .text {
+  transform: scale(0.8);
+}
