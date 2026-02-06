@@ -34,16 +34,16 @@ let noButton;
 
 // Load the image and create a p5.Image object.
 function preload() {
-    askImg = loadImage('./assets/ask.png');
-    acceptImg = loadImage('./assets/acceptance.png');
+    askImg = loadImage('/assets/ask.png');
+    acceptImg = loadImage('/assets/acceptance.png');
 
-    rejectAudio = loadSound('./assets/death.wav');
-    acceptAudio = loadSound('./assets/yay.wav');
+    rejectAudio = loadSound('/assets/death.wav');
+    acceptAudio = loadSound('/assets/yay.wav');
 
-    startMusic = loadSound('./assets/a_letter.mp3');
-    acceptMusic = loadSound('./assets/butterflies.mp3');
+    startMusic = loadSound('/assets/a_letter.mp3');
+    acceptMusic = loadSound('/assets/butterflies.mp3');
 
-    yippie = loadSound('./assets/yippie.mp3');
+    yippie = loadSound('/assets/yippie.mp3');
 }
 
 function setup() {
